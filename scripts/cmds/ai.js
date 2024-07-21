@@ -11,7 +11,7 @@ const services = [
     { url: 'https://markdevs-last-api.onrender.com/gpt4', param: 'prompt', uid: 'uid' }
 ];
 
-const designatedHeader = "🧋✨ | 𝙼𝚘𝚌𝚑𝚊 𝙰𝚒";
+const designatedHeader = "rydell ai";
 
 const getAIResponse = async (question, messageID) => {
     // Check if response is cached
