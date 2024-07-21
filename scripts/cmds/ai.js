@@ -55,7 +55,7 @@ const fetchFromAI = async (url, params) => {
 const handleCommand = async (api, event, args, message) => {
     try {
         const question = args.join(" ").trim();
-        if (!question) return message.reply("Please provide a question to get an answer.");
+        if (!question) return message.reply("magtanong kana nga dali");
         const { response, messageID } = await getAIResponse(question, event.messageID);
         api.sendMessage(`🧋✨ | 𝙼𝚘𝚌𝚑𝚊 𝙰𝚒\n━━━━━━━━━━━━━━━━\n${response}\n━━━━━━━━━━━━━━━━`, event.threadID, messageID);
     } catch (error) {
